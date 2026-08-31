@@ -53,6 +53,16 @@ export default function Home() {
         <div className="service-grid">{services.map(({ icon: Icon, title, text }) => <article className="service-card" key={title}><span className="service-icon"><Icon size={25} aria-hidden="true" /></span><h3>{title}</h3><p>{text}</p><a href="tel:+19416670098">Ask about this service <ArrowRight size={16} aria-hidden="true" /></a></article>)}</div>
       </section>
 
+      <section className="accessible-feature" aria-label="Wheelchair-accessible transportation">
+        <img src="/accessible-transport-van.png" alt="Driver assisting a passenger toward a wheelchair-accessible transport van with its ramp deployed" />
+        <div className="accessible-caption">
+          <span className="section-label">Accessible transportation</span>
+          <h2>Comfort and dignity, built into every ride.</h2>
+          <p>Thoughtful assistance and wheelchair-accessible transportation for a safer, smoother journey.</p>
+          <a href="tel:+19416670098">Ask about accessible rides <ArrowRight size={17} aria-hidden="true" /></a>
+        </div>
+      </section>
+
       <section className="why section" id="why-us">
         <div className="why-mark" aria-hidden="true"><img src="/ldj-empire-logo.png" alt="" /></div>
         <div className="why-content"><span className="section-label">The LDJ Empire difference</span><h2>Dependability is more than arriving on time.</h2><p>It is the confidence of knowing your ride has been thoughtfully planned and your comfort matters at every step.</p>
@@ -69,3 +79,4 @@ export default function Home() {
     </main>
   );
 }
+
