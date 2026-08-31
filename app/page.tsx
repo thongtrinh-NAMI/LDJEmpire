@@ -25,7 +25,11 @@ export default function Home() {
         <div className="hero-content">
           <div className="eyebrow"><MapPin size={15} aria-hidden="true" /> Serving Central Florida</div>
           <h1>Every ride matters.<br /><em>Every mile, cared for.</em></h1>
-          <p className="hero-copy">Safe, reliable non-emergency medical transportation designed around your comfort, schedule, and peace of mind.</p>
+          <p className="hero-copy">
+            <strong>Safe. Reliable. Non-Emergency Medical Transportation.</strong>
+            <br />
+            Serving Central Florida with dependable rides for medical appointments, therapy, dialysis, senior care, and recurring transportation needs.
+          </p>
           <div className="hero-actions">
             <a className="button button-gold" href="tel:+19416670098"><Phone size={19} aria-hidden="true" /> Schedule a ride</a>
             <a className="text-link" href="#services">Explore services <ArrowRight size={18} aria-hidden="true" /></a>
