@@ -51,10 +51,16 @@ export default function Home() {
       <section className="services section" id="services">
         <div className="section-heading"><div><span className="section-label">Transportation with purpose</span><h2>Care that goes beyond the curb.</h2></div><p>From one-time appointments to regular care, we help make every trip feel simple, dignified, and dependable.</p></div>
         <div className="service-grid">{services.map(({ icon: Icon, title, text }) => <article className="service-card" key={title}><span className="service-icon"><Icon size={25} aria-hidden="true" /></span><h3>{title}</h3><p>{text}</p><a href="tel:+19416670098">Ask about this service <ArrowRight size={16} aria-hidden="true" /></a></article>)}</div>
-        <figure className="service-photo">
-          <img src="/accessible-transport-van.png" alt="Driver assisting a passenger toward a silver wheelchair-accessible van with its rear ramp deployed" />
-          <figcaption><strong>Wheelchair-accessible transportation</strong><span>Comfortable, respectful assistance for every stage of the ride.</span></figcaption>
-        </figure>
+      </section>
+
+      <section className="accessible-feature" aria-label="Wheelchair-accessible transportation">
+        <img src="/accessible-transport-van.png" alt="Driver assisting a passenger toward a wheelchair-accessible transport van with its ramp deployed" />
+        <div className="accessible-caption">
+          <span className="section-label">Accessible transportation</span>
+          <h2>Comfort and dignity, built into every ride.</h2>
+          <p>Thoughtful assistance and wheelchair-accessible transportation for a safer, smoother journey.</p>
+          <a href="tel:+19416670098">Ask about accessible rides <ArrowRight size={17} aria-hidden="true" /></a>
+        </div>
       </section>
 
       <section className="why section" id="why-us">
