@@ -26,7 +26,6 @@ const structuredData = {
   areaServed: { '@type': 'AdministrativeArea', name: 'Central Florida' },
   logo: `${siteUrl}/ldj-empire-logo.png`,
   image: `${siteUrl}/accessible-transport-van.png`,
-  priceRange: '$$',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Transportation services',
